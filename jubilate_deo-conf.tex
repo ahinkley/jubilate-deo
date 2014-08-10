@@ -1,0 +1,57 @@
+\def\afterpstitlespace{%
+\vspace*{-3.5mm}%
+}
+
+\def\afterpsscorespace{%
+\vspace*{5mm}%
+}
+
+\newdimen\beforetitlespace
+\beforetitlespace=4mm
+
+\newdimen\aftertitlespace
+\aftertitlespace=3mm
+
+\newdimen\beforefirstsubspace
+\beforefirstsubspace=-2.5mm
+
+\newdimen\beforesecondsubspace
+\beforesecondsubspace=1mm
+
+\setlength{\parskip}{0mm}
+
+
+\setspaceafterinitial{3pt plus 0em minus 0em}
+\setspacebeforeinitial{3pt plus 0em minus 0em}
+
+\def\reinitial{%
+\setspaceafterinitial{3pt plus 0em minus 0em}%
+\setspacebeforeinitial{3pt plus 0em minus 0em}%
+\relax %
+}
+
+\def\noinitial{%
+\setspaceafterinitial{0pt plus 0em minus 0em}%
+\setspacebeforeinitial{0pt plus 0em minus 0em}%
+\relax %
+}
+
+
+
+
+\def\titre#1{%
+{\noindent\lineskip=2mm\begin{center}\noindent\begin{Large}\textbf{#1}\end{Large}
+\end{center}}%
+}
+
+\def\scoreheader#1#2{%
+\setfirstlineaboveinitial{\small \textsc{\textbf{#1 }}}{\small \textsc{\textbf{#1 }}}
+\commentary{{\small \emph{#2}}}
+}
+
+
+\def\chant#1#2#3{%
+\setfirstlineaboveinitial{\small \textsc{\textbf{#1 }}}{\small \textsc{\textbf{#1 }}}
+\commentary{{\small \emph{#2}}}
+\includescore{#3}
+}

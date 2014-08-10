@@ -1,0 +1,28 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{palatino}
+\usepackage{tgtermes}
+\usepackage[utf8]{inputenc}
+\usepackage{gregoriotex}
+\usepackage{gregoriosyms}
+\pagestyle{empty}
+\begin{document}
+
+\begin{center}\begin{huge}\textsc{Ave Maris Stella}\end{huge}\end{center}
+
+\setspaceafterinitial{3.2mm plus 0em minus 0em}
+\setspacebeforeinitial{3.2mm plus 0em minus 0em}
+
+\def\greinitialformat#1{%
+{\fontsize{43}{43}\selectfont #1}%
+}
+
+\setfirstlineaboveinitial{\small \textsc{\textbf{I }}}{\small \textsc{\textbf{I }}}
+\commentary{{\small \emph{}}}
+\setgrefactor{17}
+\spaceabovelines=5mm
+\includescore{Ave_maris_stella.tex}
+
+\end{document}
+
+

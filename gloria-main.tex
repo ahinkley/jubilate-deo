@@ -1,0 +1,32 @@
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{palatino}
+\usepackage{tgtermes}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{gregoriotex}
+\usepackage{gregoriosyms}
+\pagestyle{empty}
+\begin{document}
+
+
+\begin{center}\begin{huge}\textsc{}\end{huge}\end{center}
+
+\setspaceafterinitial{3.2mm plus 0em minus 0em}
+\setspacebeforeinitial{3.2mm plus 0em minus 0em}
+
+\def\greinitialformat#1{%
+{\fontsize{43}{43}\selectfont #1}%
+}
+
+\setfirstlineaboveinitial{\small \textsc{\textbf{5}}}{}
+\setaboveinitialseparation{3pt}
+\setsecondannotation{\small \textsc{\textbf{}}}
+\commentary{{\small \emph{ed. Vat. VIII}}}
+\setgrefactor{17}
+\spaceabovelines=5mm
+\includescore{gloria.tex}
+
+\end{document}
+
+
